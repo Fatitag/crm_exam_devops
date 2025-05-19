@@ -1,0 +1,6 @@
+projectKey=crm_exam
+serverUrl=http://192.168.200.5:9000
+serverVersion=9.9.1.69595
+dashboardUrl=http://192.168.200.5:9000/dashboard?id=crm_exam
+ceTaskId=AZbp-Lk69vEKVTdd9gTW
+ceTaskUrl=http://192.168.200.5:9000/api/ce/task?id=AZbp-Lk69vEKVTdd9gTW

@@ -4,7 +4,7 @@ services:
   nginx:
     build: .
     ports:
-      - "8080:80"
+      - "8084:80"
 
   jenkins:
     image: jenkins/jenkins:lts
