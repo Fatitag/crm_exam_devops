@@ -30,8 +30,8 @@ pipeline {
 
         stage('Déploiement') {
             steps {
-                sh 'docker-compose up -d'
+                sh 'docker run -d -p 8081:80 --name crm_app crm_frontend'
             }
         }
-    }
+    
 }
