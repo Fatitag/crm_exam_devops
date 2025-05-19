@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Cloner le repo') {
             steps {
-                git 'https://github.com/fatitag/crm_exam_devops.git'
+                git branch: 'main', url: 'https://github.com/fatitag/crm_exam_devops.git'
             }
         }
 
