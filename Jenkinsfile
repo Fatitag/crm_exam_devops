@@ -23,7 +23,7 @@ pipeline {
             steps {
                 withSonarQubeEnv('SonarQubeServer') {
                     // Utiliser chemin absolu de sonar-scanner pour éviter erreur 'not found'
-                    sh "/opt/sonar-scanner/bin/sonar-scanner -Dsonar.projectKey=crm_exam_devops -Dsonar.sources=./app -Dsonar.login=${SONAR_TOKEN}"
+                    sh "/opt/sonar-scanner/bin/sonar-scanner -Dsonar.projectKey=crm_exam -Dsonar.sources=./app -Dsonar.login=${SONAR_TOKEN}"
                 }
             }
         }
