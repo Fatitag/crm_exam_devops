@@ -22,8 +22,8 @@ pipeline {
         stage('Analyse SonarQube') {
             steps {
                 withSonarQubeEnv('SonarQubeServer') {
-                    // Pass the token via -Dsonar.login
-                    sh "sonar-scanner -Dsonar.projectKey=crm_exam_devops -Dsonar.sources=./app -Dsonar.login=${SONAR_TOKEN}"
+                    // Utiliser chemin absolu de sonar-scanner pour éviter erreur 'not found'
+                    sh "/opt/sonar-scanner/bin/sonar-scanner -Dsonar.projectKey=crm_exam_devops -Dsonar.sources=./app -Dsonar.login=${SONAR_TOKEN}"
                 }
             }
         }
@@ -35,4 +35,3 @@ pipeline {
         }
     }
 }
-
